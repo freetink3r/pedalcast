@@ -297,6 +297,28 @@
         padding: 2.5rem 1.25rem;
       }
     }
+
+    /* Third column: logo */
+    .content-logo {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-top: 0.3rem;
+    }
+
+    .logo-img {
+      max-width: 180px;
+      height: auto;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 767px) {
+      .content-logo {
+        margin-top: 2rem;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -374,6 +396,14 @@
           training platforms.
         </p>
         <!-- Later you can swap this for a real email form or link -->
+      </aside>
+
+      <aside class="content-logo">
+        <img 
+          src="images/pedal-cast-logo-light.png" 
+          alt="PedalCast Logo" 
+          class="logo-img"
+        />
       </aside>
     </div>
   </main>
